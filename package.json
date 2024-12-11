@@ -1,0 +1,29 @@
+{
+  "name": "express-concept",
+  "version": "1.0.0",
+  "description": "[]",
+  "main": "app.js",
+  "scripts": {
+    "test": "[]",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeniedPath/express-concept.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "[]",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeniedPath/express-concept/issues"
+  },
+  "homepage": "https://github.com/DeniedPath/express-concept#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.7",
+    "sequelize": "^6.37.5"
+  },
+  "devDependencies": {}
+}
