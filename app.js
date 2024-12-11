@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import taskRoutes from './routes/tasks';
+
 const app = express();
-const taskRoutes = require('./routes/tasks');
 
 app.use(express.json());
 app.use('/task', taskRoutes);
