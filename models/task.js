@@ -1,15 +1,25 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../config/dbconn.js';
+import sequelizeConnection from '../config/config.js';
 
-const Task = sequelize.define('Task', {
+const Task = sequelizeConnection.define('Task', {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+    },
     title: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     },
     description: {
-        type: DataTypes.TEXT
+        type: DataTypes.STRING,
     },
-    // Add other fields as needed
+    status: {
+        type: DataTypes.STRING,
+        defaultValue: 'pending',
+    },
+}, {
+    timestamps: true, // Adds createdAt and updatedAt columns
 });
 
 export default Task;
