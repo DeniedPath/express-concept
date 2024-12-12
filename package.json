@@ -1,9 +1,9 @@
 {
-  "name": "express-concept",
+  "name": "express-concept-1",
   "version": "1.0.0",
   "description": "[]",
   "main": "app.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "[]",
     "start": "node app.js"
@@ -22,9 +22,16 @@
   },
   "homepage": "https://github.com/DeniedPath/express-concept#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.8.4",
+    "mysql2": "^3.11.5",
     "nodemon": "^3.1.7",
-    "sequelize": "^6.37.5"
-  },
-  "devDependencies": {}
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5",
+    "socket.io": "^4.8.1"
+  }
 }
