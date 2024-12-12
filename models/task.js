@@ -1,23 +1,15 @@
-import { DataTypes } from "sequelize";
-import sequelize from "../config/dbconn.js";
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/dbconn.js';
 
-// add comments here
-
-        const Task = sequelize.define("Task", {
-            title: {
-                type: DataTypes.STRING,
-                allowNull: false,
-        },
-        description: {
-            type: DataTypes.TEXT,
-        },
-        dueDate: {
-            type: DataTypes.DATE,
-        },
-        completed: {
-            type: DataTypes.BOOLEAN,
-            defaultValue: false
-        }
-    });
+const Task = sequelize.define('Task', {
+    title: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    description: {
+        type: DataTypes.TEXT
+    },
+    // Add other fields as needed
+});
 
 export default Task;
